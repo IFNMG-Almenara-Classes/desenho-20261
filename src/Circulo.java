@@ -27,6 +27,10 @@ public class Circulo {
         return cor;
     }
 
+    public void mover(int dx, int dy) {
+        this.ponto.mover(dx, dy);
+    }
+
     public void desenhar(Graphics g) {
         g.setColor(this.cor);
         g.fillOval(this.ponto.getX(),
