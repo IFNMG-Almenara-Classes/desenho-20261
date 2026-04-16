@@ -1,3 +1,5 @@
+package desenho;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,7 +9,7 @@ public class Desenho extends JFrame {
     private Retangulo retangulo;
 
     public Desenho() {
-        this.setTitle("Meu Desenho");
+        this.setTitle("Meu desenho.Desenho");
         this.setSize(700, 700);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

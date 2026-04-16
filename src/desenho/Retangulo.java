@@ -1,4 +1,5 @@
-import javax.swing.*;
+package desenho;
+
 import java.awt.*;
 
 public class Retangulo extends Forma {

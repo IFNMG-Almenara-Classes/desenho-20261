@@ -1,5 +1,4 @@
-import javax.swing.*;
-import java.awt.*;
+package desenho;
 
 public class Main {
     public static void main(String[] args) {
