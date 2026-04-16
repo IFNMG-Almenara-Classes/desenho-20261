@@ -1,22 +1,20 @@
+import javax.swing.*;
 import java.awt.*;
 
-public class Retangulo {
-    private Ponto ponto;
+public class Retangulo extends Forma {
     private int altura;
     private int largura;
-    private Color cor;
 
     public Retangulo(Ponto ponto, int altura, int largura, Color cor) {
-        this.ponto = ponto;
+        super(ponto, cor);
         this.altura = altura;
         this.largura = largura;
-        this.cor = cor;
     }
 
     public void desenhar(Graphics g) {
-        g.setColor(this.cor);
-        g.fillRect(this.ponto.getX(),
-                this.ponto.getY(),
+        g.setColor(this.getCor());
+        g.fillRect(this.getPonto().getX(),
+                this.getPonto().getY(),
                 this.largura,
                 this.altura);
     }

@@ -1,13 +1,18 @@
 import java.awt.*;
 
-public class Quadrado {
-    private Ponto ponto;
+public class Quadrado extends Forma {
     private int lado;
-    private Color cor;
 
     public Quadrado(Ponto ponto, int lado, Color cor) {
-        this.ponto = ponto;
+        super(ponto, cor);
         this.lado = lado;
-        this.cor = cor;
+    }
+
+    public void desenhar(Graphics g) {
+        g.setColor(this.getCor());
+        g.fillRect(this.getPonto().getX(),
+                this.getPonto().getY(),
+                this.lado,
+                this.lado);
     }
 }
