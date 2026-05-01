@@ -18,6 +18,7 @@ public class Circulo extends Forma {
         return raio;
     }
 
+    @Override
     public void desenhar(Graphics g) {
         g.setColor(this.getCor());
         g.fillOval(this.getPonto().getX(),

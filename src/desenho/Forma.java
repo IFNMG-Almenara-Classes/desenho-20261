@@ -2,7 +2,7 @@ package desenho;
 
 import java.awt.*;
 
-public class Forma {
+public abstract class Forma {
     private Ponto ponto;
     private Color cor;
 
@@ -16,4 +16,8 @@ public class Forma {
     }
     public Ponto getPonto() { return ponto; }
     public Color getCor() { return cor; }
+
+
+    public abstract void desenhar(Graphics g);
+
 }

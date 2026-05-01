@@ -12,6 +12,7 @@ public class Retangulo extends Forma {
         this.largura = largura;
     }
 
+    @Override
     public void desenhar(Graphics g) {
         g.setColor(this.getCor());
         g.fillRect(this.getPonto().getX(),

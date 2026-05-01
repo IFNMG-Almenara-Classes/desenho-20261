@@ -10,6 +10,7 @@ public class Quadrado extends Forma {
         this.lado = lado;
     }
 
+    @Override
     public void desenhar(Graphics g) {
         g.setColor(this.getCor());
         g.fillRect(this.getPonto().getX(),
